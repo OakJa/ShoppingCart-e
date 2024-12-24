@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\NK 2314\\Documents\\GitHub\\Shop\u0E46\\ShoppingCart e\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{86CF33C0-D5F0-40C3-865D-FC5259A45C75}|ShoppingCart e.csproj|c:\\users\\nk 2314\\documents\\github\\shop\u0E46\\shoppingcart e\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86CF33C0-D5F0-40C3-865D-FC5259A45C75}|ShoppingCart e.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86CF33C0-D5F0-40C3-865D-FC5259A45C75}|ShoppingCart e.csproj|c:\\users\\nk 2314\\documents\\github\\shop\u0E46\\shoppingcart e\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{86CF33C0-D5F0-40C3-865D-FC5259A45C75}|ShoppingCart e.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -19,11 +23,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\NK 2314\\Documents\\GitHub\\Shop\u0E46\\ShoppingCart e\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\NK 2314\\Documents\\GitHub\\Shop\u0E46\\ShoppingCart e\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T02:58:26.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NK 2314\\Documents\\GitHub\\Shop\u0E46\\ShoppingCart e\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\NK 2314\\Documents\\GitHub\\Shop\u0E46\\ShoppingCart e\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\NK 2314\\Documents\\GitHub\\Shop\u0E46\\ShoppingCart e\\Form1.cs [Design]*",
+              "RelativeToolTip": "Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T02:28:54.08Z",
               "EditorCaption": " [Design]"

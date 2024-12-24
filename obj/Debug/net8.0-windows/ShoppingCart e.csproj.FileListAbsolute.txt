@@ -1,0 +1,17 @@
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\bin\Debug\net8.0-windows\ShoppingCart e.exe
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\bin\Debug\net8.0-windows\ShoppingCart e.deps.json
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\bin\Debug\net8.0-windows\ShoppingCart e.runtimeconfig.json
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\bin\Debug\net8.0-windows\ShoppingCart e.dll
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\bin\Debug\net8.0-windows\ShoppingCart e.pdb
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart_e.Form1.resources
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.csproj.GenerateResource.cache
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.AssemblyInfoInputs.cache
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.AssemblyInfo.cs
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.csproj.CoreCompileInputs.cache
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.sourcelink.json
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.dll
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\refint\ShoppingCart e.dll
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.pdb
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ShoppingCart e.genruntimeconfig.cache
+C:\Users\NK 2314\Documents\GitHub\Shopๆ\ShoppingCart e\obj\Debug\net8.0-windows\ref\ShoppingCart e.dll
