@@ -28,15 +28,24 @@
 
                 double totalSum = 0;
 
-                if (chbCoffee.Checked)
+                if (chbCoffee.Checked || chbMussha.Checked)
                 {
-                    totalSum += isum1;
-                }
+                    if (chbCoffee.Checked)
+                    {
+                        totalSum += isum1;
+                    }
 
-                if (chbMussha.Checked)
-                {
-                    totalSum += isum2;
+                    if (chbMussha.Checked)
+                    {
+                        totalSum += isum2;
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("กรุณาเลือกอย่างน้อยหนึ่งรายการ.");
+                    return;
+                }
+              
 
                 total.Text = totalSum.ToString();
                 tbCast.Text = isum3.ToString();
