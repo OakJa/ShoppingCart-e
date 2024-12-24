@@ -1,4 +1,4 @@
-namespace ShoppingCart_e
+﻿namespace ShoppingCart_e
 {
     public partial class Form1 : Form
     {
@@ -15,33 +15,59 @@ namespace ShoppingCart_e
             string strMusshaQuantity = tbMusshaQuantity.Text;
             string strCast = tbCast.Text;
 
-            int iCoffeeprice = int.Parse(strCoffeeprice);
-            int iCoffeeQuanitity = int.Parse(strCoffeeQunatity);  // Corrected line
-            int iMusshaprice = int.Parse(strMusshaprice);
-            int iMusshaQuantity = int.Parse(strMusshaQuantity);
-            int iCast = int.Parse(strCast);
-
-            double isum1 = iCoffeeprice * iCoffeeQuanitity;
-            double isum2 = iMusshaprice * iMusshaQuantity;
-            double isum3 = iCast;
-
-
-            double totalSum = 0;
-
-            if (chbCoffee.Checked)
+            if (int.TryParse(strCast, out int iCast))
             {
-                totalSum += isum1;
-            }
+                int.TryParse(strCoffeeprice, out int iCoffeeprice);
+                int.TryParse(strCoffeeQunatity, out int iCoffeeQuanitity);
+                int.TryParse(strMusshaprice, out int iMusshaprice);
+                int.TryParse(strMusshaQuantity, out int iMusshaQuantity);
 
-            if (chbMussha.Checked)
+                double isum1 = iCoffeeprice * iCoffeeQuanitity;
+                double isum2 = iMusshaprice * iMusshaQuantity;
+                double isum3 = iCast;
+
+                double totalSum = 0;
+
+                if (chbCoffee.Checked)
+                {
+                    totalSum += isum1;
+                }
+
+                if (chbMussha.Checked)
+                {
+                    totalSum += isum2;
+                }
+
+                total.Text = totalSum.ToString();
+                tbCast.Text = isum3.ToString();
+                double priceToPay = isum1 + isum2;
+                tbprice_to_pay.Text = priceToPay.ToString();
+
+                double change = isum3 - priceToPay;
+
+                if (change >= 0)
+                {
+                    int[] denominations = { 1000, 500, 100, 50, 20, 10, 5, 1 };
+                    TextBox[] changeTextBoxes = { textBox1000, textBox500, textBox100, textBox50, textBox20, textBox10, textBox5, textBox_1 };
+
+                    for (int i = 0; i < denominations.Length; i++)
+                    {
+                        int count = (int)(change / denominations[i]);
+                        changeTextBoxes[i].Text = count.ToString();
+                        change -= count * denominations[i];
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("เกินวงเงิน.");
+                }
+            }
+            else
             {
-                totalSum += isum2;
+                MessageBox.Show("กรุณากรอกตัวเลขใน Cast ก่อน.");
             }
-
-            total.Text = totalSum.ToString();
-            tbCast.Text = isum3.ToString();
-            tbprice_to_pay.Text = (isum1 + isum2).ToString();
         }
+
 
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -97,6 +123,32 @@ namespace ShoppingCart_e
         private void label12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbCast_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tbCoffeeprice.Clear();
+            tbCoffeeQunatity.Clear();
+            tbMusshaprice.Clear();
+            tbMusshaQuantity.Clear();
+            tbCast.Clear();
+            total.Clear();
+            tbprice_to_pay.Clear();
+            textBox1000.Clear();
+            textBox500.Clear();
+            textBox100.Clear();
+            textBox50.Clear();
+            textBox20.Clear();
+            textBox10.Clear();
+            textBox5.Clear();
+            textBox_1.Clear();
+            chbCoffee.Checked = false;
+            chbMussha.Checked = false;
         }
     }
 }

@@ -58,6 +58,7 @@
             label11 = new Label();
             tbprice_to_pay = new TextBox();
             label12 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // tbCoffeeprice
@@ -155,6 +156,7 @@
             tbCast.Name = "tbCast";
             tbCast.Size = new Size(100, 23);
             tbCast.TabIndex = 10;
+            tbCast.TextChanged += tbCast_TextChanged;
             // 
             // label3
             // 
@@ -310,11 +312,22 @@
             label12.Text = "price to pay";
             label12.Click += label12_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(366, 157);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 30;
+            button2.Text = "ล้างข้องมูล";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(748, 408);
+            Controls.Add(button2);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(tbprice_to_pay);
@@ -384,5 +397,6 @@
         private Label label11;
         private TextBox tbprice_to_pay;
         private Label label12;
+        private Button button2;
     }
 }
