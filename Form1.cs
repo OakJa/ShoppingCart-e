@@ -9,6 +9,11 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ShopShoplab();
+        }
+
+        private void ShopShoplab()
+        {
             string strCoffeeprice = tbCoffeeprice.Text;
             string strCoffeeQunatity = tbCoffeeQunatity.Text;
             string strMusshaprice = tbMusshaprice.Text;
@@ -128,12 +133,8 @@
             }
         }
 
-
-
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
 
         }
 
@@ -149,11 +150,7 @@
 
         private void tbCoffeeprice_TextChanged(object sender, EventArgs e)
         {
-            {
 
-
-
-            }
         }
 
         private void tbMusshaprice_TextChanged(object sender, EventArgs e)
