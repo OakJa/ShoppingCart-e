@@ -68,12 +68,31 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
+            label27 = new Label();
+            label26 = new Label();
+            label25 = new Label();
             chbFood = new CheckBox();
             chbBeverage = new CheckBox();
             chbAll = new CheckBox();
             tbFood = new TextBox();
             tbAll = new TextBox();
             tbBeverage = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label20 = new Label();
+            textBox0_01 = new TextBox();
+            label21 = new Label();
+            textBox0_05 = new TextBox();
+            label22 = new Label();
+            textBox0_10 = new TextBox();
+            label23 = new Label();
+            textBox0_25 = new TextBox();
+            label24 = new Label();
+            textBox0_50 = new TextBox();
+            label17 = new Label();
+            tbTon = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -179,7 +198,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(531, 132);
+            label3.Location = new Point(468, 163);
             label3.Name = "label3";
             label3.Size = new Size(31, 15);
             label3.TabIndex = 13;
@@ -188,15 +207,15 @@
             // 
             // textBox1000
             // 
-            textBox1000.Location = new Point(578, 129);
+            textBox1000.Location = new Point(500, 160);
             textBox1000.Name = "textBox1000";
-            textBox1000.Size = new Size(100, 23);
+            textBox1000.Size = new Size(77, 23);
             textBox1000.TabIndex = 12;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(531, 165);
+            label4.Location = new Point(468, 196);
             label4.Name = "label4";
             label4.Size = new Size(25, 15);
             label4.TabIndex = 15;
@@ -204,15 +223,15 @@
             // 
             // textBox500
             // 
-            textBox500.Location = new Point(578, 162);
+            textBox500.Location = new Point(500, 193);
             textBox500.Name = "textBox500";
-            textBox500.Size = new Size(100, 23);
+            textBox500.Size = new Size(77, 23);
             textBox500.TabIndex = 14;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(531, 257);
+            label5.Location = new Point(468, 288);
             label5.Name = "label5";
             label5.Size = new Size(19, 15);
             label5.TabIndex = 21;
@@ -220,15 +239,15 @@
             // 
             // textBox20
             // 
-            textBox20.Location = new Point(578, 254);
+            textBox20.Location = new Point(500, 285);
             textBox20.Name = "textBox20";
-            textBox20.Size = new Size(100, 23);
+            textBox20.Size = new Size(77, 23);
             textBox20.TabIndex = 20;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(531, 224);
+            label6.Location = new Point(468, 255);
             label6.Name = "label6";
             label6.Size = new Size(19, 15);
             label6.TabIndex = 19;
@@ -236,15 +255,15 @@
             // 
             // textBox50
             // 
-            textBox50.Location = new Point(578, 221);
+            textBox50.Location = new Point(500, 252);
             textBox50.Name = "textBox50";
-            textBox50.Size = new Size(100, 23);
+            textBox50.Size = new Size(77, 23);
             textBox50.TabIndex = 18;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(531, 195);
+            label7.Location = new Point(468, 226);
             label7.Name = "label7";
             label7.Size = new Size(25, 15);
             label7.TabIndex = 17;
@@ -252,16 +271,16 @@
             // 
             // textBox100
             // 
-            textBox100.Location = new Point(578, 192);
+            textBox100.Location = new Point(500, 223);
             textBox100.Name = "textBox100";
-            textBox100.Size = new Size(100, 23);
+            textBox100.Size = new Size(77, 23);
             textBox100.TabIndex = 16;
             textBox100.TextChanged += textBox100_TextChanged;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(531, 353);
+            label8.Location = new Point(468, 384);
             label8.Name = "label8";
             label8.Size = new Size(13, 15);
             label8.TabIndex = 27;
@@ -269,15 +288,15 @@
             // 
             // textBox_1
             // 
-            textBox_1.Location = new Point(578, 350);
+            textBox_1.Location = new Point(500, 381);
             textBox_1.Name = "textBox_1";
-            textBox_1.Size = new Size(100, 23);
+            textBox_1.Size = new Size(77, 23);
             textBox_1.TabIndex = 26;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(531, 320);
+            label9.Location = new Point(468, 351);
             label9.Name = "label9";
             label9.Size = new Size(13, 15);
             label9.TabIndex = 25;
@@ -285,15 +304,15 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(578, 317);
+            textBox5.Location = new Point(500, 348);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
+            textBox5.Size = new Size(77, 23);
             textBox5.TabIndex = 24;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(531, 291);
+            label10.Location = new Point(468, 322);
             label10.Name = "label10";
             label10.Size = new Size(19, 15);
             label10.TabIndex = 23;
@@ -301,9 +320,9 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(578, 288);
+            textBox10.Location = new Point(500, 319);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(100, 23);
+            textBox10.Size = new Size(77, 23);
             textBox10.TabIndex = 22;
             // 
             // label11
@@ -422,6 +441,9 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(label27);
+            groupBox3.Controls.Add(label26);
+            groupBox3.Controls.Add(label25);
             groupBox3.Controls.Add(chbFood);
             groupBox3.Controls.Add(chbBeverage);
             groupBox3.Controls.Add(chbAll);
@@ -435,6 +457,33 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "ลดราคาแซ่บๆ";
             groupBox3.Enter += groupBox3_Enter;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(254, 82);
+            label27.Name = "label27";
+            label27.Size = new Size(17, 15);
+            label27.TabIndex = 62;
+            label27.Text = "%";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(254, 53);
+            label26.Name = "label26";
+            label26.Size = new Size(17, 15);
+            label26.TabIndex = 62;
+            label26.Text = "%";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(254, 20);
+            label25.Name = "label25";
+            label25.Size = new Size(17, 15);
+            label25.TabIndex = 61;
+            label25.Text = "%";
             // 
             // chbFood
             // 
@@ -468,30 +517,179 @@
             // 
             // tbFood
             // 
-            tbFood.Location = new Point(204, 75);
+            tbFood.Location = new Point(133, 74);
             tbFood.Name = "tbFood";
             tbFood.Size = new Size(100, 23);
             tbFood.TabIndex = 44;
             // 
             // tbAll
             // 
-            tbAll.Location = new Point(204, 16);
+            tbAll.Location = new Point(133, 15);
             tbAll.Name = "tbAll";
             tbAll.Size = new Size(100, 23);
             tbAll.TabIndex = 41;
             // 
             // tbBeverage
             // 
-            tbBeverage.Location = new Point(204, 46);
+            tbBeverage.Location = new Point(133, 45);
             tbBeverage.Name = "tbBeverage";
             tbBeverage.Size = new Size(100, 23);
             tbBeverage.TabIndex = 43;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(164, 10);
+            label13.Name = "label13";
+            label13.Size = new Size(29, 15);
+            label13.TabIndex = 41;
+            label13.Text = "ราคา";
+            label13.Click += label13_Click;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(257, 10);
+            label14.Name = "label14";
+            label14.Size = new Size(37, 15);
+            label14.TabIndex = 42;
+            label14.Text = "จำนวน";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(257, 142);
+            label15.Name = "label15";
+            label15.Size = new Size(37, 15);
+            label15.TabIndex = 44;
+            label15.Text = "จำนวน";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(164, 142);
+            label16.Name = "label16";
+            label16.Size = new Size(29, 15);
+            label16.TabIndex = 43;
+            label16.Text = "ราคา";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(587, 290);
+            label20.Name = "label20";
+            label20.Size = new Size(28, 15);
+            label20.TabIndex = 54;
+            label20.Text = "0.01";
+            // 
+            // textBox0_01
+            // 
+            textBox0_01.Location = new Point(619, 287);
+            textBox0_01.Name = "textBox0_01";
+            textBox0_01.Size = new Size(77, 23);
+            textBox0_01.TabIndex = 53;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(587, 257);
+            label21.Name = "label21";
+            label21.Size = new Size(28, 15);
+            label21.TabIndex = 52;
+            label21.Text = "0.05";
+            // 
+            // textBox0_05
+            // 
+            textBox0_05.Location = new Point(619, 254);
+            textBox0_05.Name = "textBox0_05";
+            textBox0_05.Size = new Size(77, 23);
+            textBox0_05.TabIndex = 51;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(587, 228);
+            label22.Name = "label22";
+            label22.Size = new Size(28, 15);
+            label22.TabIndex = 50;
+            label22.Text = "0.10";
+            // 
+            // textBox0_10
+            // 
+            textBox0_10.Location = new Point(619, 225);
+            textBox0_10.Name = "textBox0_10";
+            textBox0_10.Size = new Size(77, 23);
+            textBox0_10.TabIndex = 49;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(587, 198);
+            label23.Name = "label23";
+            label23.Size = new Size(28, 15);
+            label23.TabIndex = 48;
+            label23.Text = "0.25";
+            // 
+            // textBox0_25
+            // 
+            textBox0_25.Location = new Point(619, 195);
+            textBox0_25.Name = "textBox0_25";
+            textBox0_25.Size = new Size(77, 23);
+            textBox0_25.TabIndex = 47;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(587, 165);
+            label24.Name = "label24";
+            label24.Size = new Size(28, 15);
+            label24.TabIndex = 46;
+            label24.Text = "0.50";
+            // 
+            // textBox0_50
+            // 
+            textBox0_50.Location = new Point(619, 162);
+            textBox0_50.Name = "textBox0_50";
+            textBox0_50.Size = new Size(77, 23);
+            textBox0_50.TabIndex = 45;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(530, 130);
+            label17.Name = "label17";
+            label17.Size = new Size(42, 15);
+            label17.TabIndex = 55;
+            label17.Text = "เงินทอน";
+            // 
+            // tbTon
+            // 
+            tbTon.Location = new Point(578, 128);
+            tbTon.Name = "tbTon";
+            tbTon.Size = new Size(100, 23);
+            tbTon.TabIndex = 56;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(748, 408);
+            Controls.Add(tbTon);
+            Controls.Add(label17);
+            Controls.Add(label20);
+            Controls.Add(textBox0_01);
+            Controls.Add(label21);
+            Controls.Add(textBox0_05);
+            Controls.Add(label22);
+            Controls.Add(textBox0_10);
+            Controls.Add(label23);
+            Controls.Add(textBox0_25);
+            Controls.Add(label24);
+            Controls.Add(textBox0_50);
+            Controls.Add(label15);
+            Controls.Add(label16);
+            Controls.Add(label14);
+            Controls.Add(label13);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -581,5 +779,24 @@
         private CheckBox chbFood;
         private CheckBox chbBeverage;
         private CheckBox chbAll;
+        private Label label13;
+        private Label label14;
+        private Label label27;
+        private Label label26;
+        private Label label25;
+        private Label label15;
+        private Label label16;
+        private Label label20;
+        private TextBox textBox0_01;
+        private Label label21;
+        private TextBox textBox0_05;
+        private Label label22;
+        private TextBox textBox0_10;
+        private Label label23;
+        private TextBox textBox0_25;
+        private Label label24;
+        private TextBox textBox0_50;
+        private Label label17;
+        private TextBox tbTon;
     }
 }
