@@ -102,6 +102,7 @@
             // 
             tbCoffeeprice.Location = new Point(106, 18);
             tbCoffeeprice.Name = "tbCoffeeprice";
+            tbCoffeeprice.ReadOnly = true;
             tbCoffeeprice.Size = new Size(100, 23);
             tbCoffeeprice.TabIndex = 0;
             tbCoffeeprice.TextChanged += tbCoffeeprice_TextChanged;
@@ -136,11 +137,13 @@
             chbMussha.TabIndex = 5;
             chbMussha.Text = "Mussha";
             chbMussha.UseVisualStyleBackColor = true;
+            chbMussha.CheckedChanged += chbMussha_CheckedChanged_1;
             // 
             // tbMusshaprice
             // 
             tbMusshaprice.Location = new Point(106, 56);
             tbMusshaprice.Name = "tbMusshaprice";
+            tbMusshaprice.ReadOnly = true;
             tbMusshaprice.Size = new Size(100, 23);
             tbMusshaprice.TabIndex = 3;
             tbMusshaprice.TextChanged += tbMusshaprice_TextChanged;
@@ -383,11 +386,13 @@
             chbHamberger.TabIndex = 35;
             chbHamberger.Text = "Hamberger";
             chbHamberger.UseVisualStyleBackColor = true;
+            chbHamberger.CheckedChanged += chbHamberger_CheckedChanged_1;
             // 
             // tbHambergerprice
             // 
             tbHambergerprice.Location = new Point(102, 58);
             tbHambergerprice.Name = "tbHambergerprice";
+            tbHambergerprice.ReadOnly = true;
             tbHambergerprice.Size = new Size(100, 23);
             tbHambergerprice.TabIndex = 34;
             // 
@@ -400,11 +405,13 @@
             chbNoodle.TabIndex = 33;
             chbNoodle.Text = "Noodle";
             chbNoodle.UseVisualStyleBackColor = true;
+            chbNoodle.CheckedChanged += chbNoodle_CheckedChanged_1;
             // 
             // tbNoodleprice
             // 
             tbNoodleprice.Location = new Point(102, 20);
             tbNoodleprice.Name = "tbNoodleprice";
+            tbNoodleprice.ReadOnly = true;
             tbNoodleprice.Size = new Size(100, 23);
             tbNoodleprice.TabIndex = 32;
             // 
@@ -504,6 +511,7 @@
             chbBeverage.TabIndex = 46;
             chbBeverage.Text = "Beverage";
             chbBeverage.UseVisualStyleBackColor = true;
+            chbBeverage.CheckedChanged += chbBeverage_CheckedChanged;
             // 
             // chbAll
             // 
@@ -514,6 +522,7 @@
             chbAll.TabIndex = 45;
             chbAll.Text = "All";
             chbAll.UseVisualStyleBackColor = true;
+            chbAll.CheckedChanged += chbAll_CheckedChanged;
             // 
             // tbFood
             // 

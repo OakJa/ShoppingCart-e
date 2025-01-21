@@ -4,9 +4,50 @@ namespace ShoppingCart_e
 {
     public partial class Form1 : Form
     {
+        item itemCoffee = new item();
+        item itemMussha = new item();
+        item itemNoodle = new item();
+        item itemHamberger = new item();
+
         public Form1()
         {
             InitializeComponent();
+
+            itemCoffee.name = "Coffee";
+            itemCoffee.price = 50;
+            itemCoffee.quantity = 0;
+
+            tbCoffeeprice.Text =
+                itemCoffee.price.ToString();
+            tbCoffeeQunatity.Text =
+                itemCoffee.quantity.ToString();
+
+            itemMussha.name = "Mussha";
+            itemMussha.price = 40;
+            itemMussha.quantity = 0;
+
+            tbMusshaprice.Text =
+                itemMussha.price.ToString();
+            tbMusshaQuantity.Text =
+                itemMussha.quantity.ToString();
+
+            itemNoodle.name = "Noodle";
+            itemNoodle.price = 25;
+            itemNoodle.quantity = 0;
+
+            tbNoodleprice.Text =
+                itemNoodle.price.ToString();
+            tbNoodleQunatity.Text =
+                itemNoodle.quantity.ToString();
+
+            itemHamberger.name = "Hamberger";
+            itemHamberger.price = 120;
+            itemHamberger.quantity = 0;
+
+            tbHambergerprice.Text =
+                itemHamberger.price.ToString();
+            tbHambergerQunatity.Text =
+                itemHamberger.quantity.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -16,58 +57,48 @@ namespace ShoppingCart_e
 
         private void ShopShoplab()
         {
-            string strCoffeeprice = tbCoffeeprice.Text;
-            string strCoffeeQunatity = tbCoffeeQunatity.Text;
-            string strMusshaprice = tbMusshaprice.Text;
-            string strMusshaQuantity = tbMusshaQuantity.Text;
-            string strNoodleprice = tbNoodleprice.Text;
-            string strNoodleQuantity = tbNoodleQunatity.Text;
-            string strHambergerprice = tbHambergerprice.Text;
-            string strHambergerQuantity = tbHambergerQunatity.Text;
-            string strAll = tbAll.Text;
-            string strFood = tbFood.Text;
-            string strBeverage = tbBeverage.Text;
             string strCast = tbCast.Text;
-            string strTon = tbTon.Text;
-            double iCoffeeprice = 0, iCoffeeQuanitity = 0, iMusshaprice = 0, iMusshaQuantity = 0, iNoodleprice = 0, iNoodleQuantity = 0, iHambergerprice = 0, iHambergerQuantity = 0, iCast = 0, iTon = 0;
+            double iCast = 0;
 
             if (double.TryParse(strCast, out iCast))
             {
-                double.TryParse(strCoffeeprice, out iCoffeeprice);
-                double.TryParse(strCoffeeQunatity, out iCoffeeQuanitity);
-                double.TryParse(strMusshaprice, out iMusshaprice);
-                double.TryParse(strMusshaQuantity, out iMusshaQuantity);
-                double.TryParse(strNoodleprice, out iNoodleprice);
-                double.TryParse(strNoodleQuantity, out iNoodleQuantity);
-                double.TryParse(strHambergerprice, out iHambergerprice);
-                double.TryParse(strHambergerQuantity, out iHambergerQuantity);
+                itemCoffee.price = double.Parse(tbCoffeeprice.Text);
+                itemCoffee.quantity = int.Parse(tbCoffeeQunatity.Text);
+                itemMussha.price = double.Parse(tbMusshaprice.Text);
+                itemMussha.quantity = int.Parse(tbMusshaQuantity.Text);
+                itemNoodle.price = double.Parse(tbNoodleprice.Text);
+                itemNoodle.quantity = int.Parse(tbNoodleQunatity.Text);
+                itemHamberger.price = double.Parse(tbHambergerprice.Text);
+                itemHamberger.quantity = int.Parse(tbHambergerQunatity.Text);
 
-                double isum1 = iCoffeeprice * iCoffeeQuanitity;
-                double isum2 = iMusshaprice * iMusshaQuantity;
-                double isum3 = iNoodleprice * iNoodleQuantity;
-                double isum4 = iHambergerprice * iHambergerQuantity;
+                
+                
+
+                double isum1 = itemCoffee.price * itemCoffee.quantity;
+                double isum2 = itemMussha.price * itemMussha.quantity;
+                double isum3 = itemNoodle.price * itemNoodle.quantity;
+                double isum4 = itemHamberger.price * itemHamberger.quantity;
                 double isumcast = iCast;
-                double isumton = iTon;
 
                 double priceToPay = 0;
 
-                if (chbCoffee.Checked || chbMussha.Checked || chbNoodle.Checked || chbHamberger.Checked)
+                if (itemCoffee.Check || itemMussha.Check || itemNoodle.Check || itemHamberger.Check)
                 {
-                    if (chbCoffee.Checked)
+                    if (itemCoffee.Check)
                     {
                         priceToPay += isum1;
                     }
 
-                    if (chbMussha.Checked)
+                    if (itemMussha.Check)
                     {
                         priceToPay += isum2;
                     }
-                    if (chbNoodle.Checked)
+                    if (itemNoodle.Check)
                     {
                         priceToPay += isum3;
                     }
 
-                    if (chbHamberger.Checked)
+                    if (itemHamberger.Check)
                     {
                         priceToPay += isum4;
                     }
@@ -82,34 +113,30 @@ namespace ShoppingCart_e
                 total.Text = totalSum.ToString("F2");
 
                 tbprice_to_pay.Text = priceToPay.ToString("F2");
-                
 
                 double change = isumcast - priceToPay;
-                double isumTon = change;
-                tbTon.Text = isumTon.ToString("F2");
-
-
+                tbTon.Text = change.ToString("F2");
 
                 if (chbAll.Checked || chbBeverage.Checked || chbFood.Checked)
                 {
                     double discountedTotal = totalSum;
                     if (chbAll.Checked)
                     {
-                        if (double.TryParse(strAll, out double allDiscount))
+                        if (double.TryParse(tbAll.Text, out double allDiscount))
                         {
                             discountedTotal = totalSum * (1 - allDiscount / 100);
                         }
                     }
                     else if (chbFood.Checked)
                     {
-                        if (double.TryParse(strFood, out double foodDiscount))
+                        if (double.TryParse(tbFood.Text, out double foodDiscount))
                         {
                             discountedTotal = (isum3 + isum4) * (1 - foodDiscount / 100) + (isum1 + isum2);
                         }
                     }
                     else if (chbBeverage.Checked)
                     {
-                        if (double.TryParse(strBeverage, out double beverageDiscount))
+                        if (double.TryParse(tbBeverage.Text, out double beverageDiscount))
                         {
                             discountedTotal = (isum1 + isum2) * (1 - beverageDiscount / 100) + (isum3 + isum4);
                         }
@@ -123,8 +150,8 @@ namespace ShoppingCart_e
 
                 if (change > 0)
                 {
-                    double[] denominations = { 1000, 500, 100, 50, 20, 10, 5, 1, 0.50, 0.25, 0.10, 0.05, 0.01};
-                    TextBox[] changeTextBoxes = { textBox1000, textBox500, textBox100, textBox50, textBox20, textBox10, textBox5, textBox_1, textBox0_50 ,textBox0_25,textBox0_10, textBox0_05, textBox0_01};
+                    double[] denominations = { 1000, 500, 100, 50, 20, 10, 5, 1, 0.50, 0.25, 0.10, 0.05, 0.01 };
+                    TextBox[] changeTextBoxes = { textBox1000, textBox500, textBox100, textBox50, textBox20, textBox10, textBox5, textBox_1, textBox0_50, textBox0_25, textBox0_10, textBox0_05, textBox0_01 };
 
                     for (int i = 0; i < denominations.Length; i++)
                     {
@@ -134,10 +161,9 @@ namespace ShoppingCart_e
                         change -= count * denominations[i];
                     }
                 }
-              
-            else
+                else
                 {
-                  MessageBox.Show("เกินวงเงิน.");
+                    MessageBox.Show("เกินวงเงิน.");
                 }
             }
             else
@@ -148,7 +174,7 @@ namespace ShoppingCart_e
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            itemCoffee.Check = chbCoffee.Checked;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -229,10 +255,10 @@ namespace ShoppingCart_e
             textBox0_05.Clear();
             textBox0_01.Clear();
 
-            chbCoffee.Checked = false;
-            chbMussha.Checked = false;
-            chbNoodle.Checked = false;
-            chbHamberger.Checked = false;
+            itemCoffee.Check = false;
+            itemMussha.Check = false;
+            itemNoodle.Check = false;
+            itemHamberger.Check = false;
         }
 
         private void textBox100_TextChanged(object sender, EventArgs e)
@@ -261,25 +287,25 @@ namespace ShoppingCart_e
         }
         private void UpdateCheckboxStates()
         {
-            if (chbCoffee.Checked)
+            if (itemCoffee.Check)
             {
                 chbMussha.Enabled = false;
                 chbNoodle.Enabled = false;
                 chbHamberger.Enabled = false;
             }
-            else if (chbMussha.Checked)
+            else if (itemMussha.Check)
             {
                 chbCoffee.Enabled = false;
                 chbNoodle.Enabled = false;
                 chbHamberger.Enabled = false;
             }
-            else if (chbNoodle.Checked)
+            else if (itemNoodle.Check)
             {
                 chbCoffee.Enabled = false;
                 chbMussha.Enabled = false;
                 chbHamberger.Enabled = false;
             }
-            else if (chbHamberger.Checked)
+            else if (itemHamberger.Check)
             {
                 chbCoffee.Enabled = false;
                 chbMussha.Enabled = false;
@@ -312,6 +338,34 @@ namespace ShoppingCart_e
         private void chbHamberger_CheckedChanged(object sender, EventArgs e)
         {
             UpdateCheckboxStates();
+        }
+
+        private void chbMussha_CheckedChanged_1(object sender, EventArgs e)
+        {
+            itemMussha.Check = chbMussha.Checked;
+        }
+
+        private void chbNoodle_CheckedChanged_1(object sender, EventArgs e)
+        {
+            itemNoodle.Check = chbNoodle.Checked;
+        }
+
+        private void chbHamberger_CheckedChanged_1(object sender, EventArgs e)
+        {
+            itemHamberger.Check = chbHamberger.Checked;
+        }
+
+       
+
+        private void chbAll_CheckedChanged(object sender, EventArgs e)
+        {
+         
+        }
+        
+
+        private void chbBeverage_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
